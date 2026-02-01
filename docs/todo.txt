@@ -1,0 +1,4 @@
+1) Do further EDA on the boston data which would include more charts as well as looking at distributions and investigating missing data/
+2) Bring in additional data sources, update the dataset.py script to clean both of them and merge if desired.
+3) Start feature engineering in features.py to prepare for model building
+4) In the models directory build some baseline models utlizing the features built in the previous step

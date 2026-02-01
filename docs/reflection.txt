@@ -1,0 +1,6 @@
+For this assignment I chose to do a combination of the basic and advanced versions. 
+
+I only used the one provided dataset but I did store the data in an AWS S3 bucket. 
+I chose this as I anticipate utilizing S3 in my capstone project and wanted to gain experience with AWS.
+
+For the analysis, I chose to eit plots.py and created a bar chart of area by neighborhood. The plot is saved in reports/figures/.

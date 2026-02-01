@@ -3,6 +3,7 @@ from pathlib import Path
 from loguru import logger
 from tqdm import tqdm
 import typer
+import pandas as pd
 
 from capstone_sem2_major.config import PROCESSED_DATA_DIR, RAW_DATA_DIR
 
@@ -18,9 +19,12 @@ def main(
 ):
     # ---- REPLACE THIS WITH YOUR OWN CODE ----
     logger.info("Processing dataset...")
-    for i in tqdm(range(10), total=10):
-        if i == 5:
-            logger.info("Something happened for iteration 5.")
+    df = pd.read_csv(input_path)
+
+    # rename "name" column to "neighborhood"
+    df = df.rename(columns={"name": "neighborhood"})
+
+    df.to_csv(output_path, index=False)
     logger.success("Processing dataset complete.")
     # -----------------------------------------
 
